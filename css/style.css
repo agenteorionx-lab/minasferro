@@ -1,0 +1,368 @@
+/* ==========================================================================
+   MINASFERRO - DESIGN SYSTEM ENTERPRISE SIDERÚRGICO
+   Inspirado na arquitetura e sofisticação de minasferro.com
+   Paleta: Branco Arquiteto, Cinza Concreto/Aço e Dois Tons de Azul Corporativo
+   Tipografia: Lexend (Títulos de Impacto) + Plus Jakarta Sans (Leitura Técnica)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Cores Principais da Marca */
+  --color-primary-navy: #0B2341;      /* Azul Siderúrgico Profundo */
+  --color-brand-blue: #1657A0;        /* Azul Aço Oficial da Marca */
+  --color-brand-blue-hover: #0F427D;  /* Hover de Ação */
+  --color-brand-sky: #EBF3FC;         /* Azul Claro Estrutural */
+  
+  /* Escala Arquitetônica de Cinzas e Brancos */
+  --color-pure-white: #FFFFFF;
+  --color-steel-50: #F8FAFC;
+  --color-steel-100: #F1F5F9;
+  --color-steel-200: #E2E8F0;
+  --color-steel-300: #CBD5E1;
+  --color-steel-400: #94A3B8;
+  --color-steel-500: #64748B;
+  --color-steel-600: #475569;
+  --color-steel-700: #334155;
+  --color-steel-800: #1E293B;
+  --color-steel-900: #0F172A;
+  
+  /* Tipografia */
+  --font-heading: 'Lexend', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Reset e Padrões Globais */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-pure-white);
+  color: var(--color-steel-800);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
+/* Barra de Rolagem Sutil e Industrial */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-steel-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-steel-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-blue);
+}
+
+/* Placeholder Arquitetônico com Proporção de Engenharia */
+.arch-frame {
+  position: relative;
+  background-color: var(--color-steel-100);
+  border: 1px solid var(--color-steel-200);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.arch-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(203, 213, 225, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.4) 1px, transparent 1px);
+  pointer-events: none;
+}
+
+.arch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--color-brand-sky);
+  color: var(--color-primary-navy);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border-left: 3px solid var(--color-brand-blue);
+}
+
+/* Cards de Soluções Sofisticados (Estilo minasferro.com) */
+.solution-card {
+  position: relative;
+  background: var(--color-pure-white);
+  border: 1px solid var(--color-steel-200);
+  border-radius: 6px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.solution-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-brand-blue);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-steel-300);
+  box-shadow: 0 16px 32px -8px rgba(11, 35, 65, 0.08), 0 4px 8px -2px rgba(11, 35, 65, 0.03);
+}
+
+.solution-card:hover::after {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   CARROSSEL DE SOLUÇÕES ESPECIALIZADAS (INTERATIVO & RESPONSIVO)
+   ========================================================================== */
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  cursor: grab;
+  user-select: none;
+  padding: 0.5rem 0.25rem 1.25rem 0.25rem;
+}
+
+.carousel-track.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .carousel-item {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-item {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background-color: var(--color-steel-300);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.carousel-dot:hover {
+  background-color: var(--color-steel-400);
+}
+
+.carousel-dot.active {
+  width: 32px;
+  background-color: var(--color-brand-blue);
+  border-radius: 6px;
+}
+
+/* ==========================================================================
+   EFEITO DE ONDA SOFISTICADA PARA A FAIXA DE NÚMEROS / AUTORIDADE
+   ========================================================================== */
+.wave-mesh-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0.22;
+}
+
+@keyframes waveDriftSlow {
+  0% {
+    transform: scaleY(1) translateX(0);
+  }
+  50% {
+    transform: scaleY(1.06) translateX(-2%);
+  }
+  100% {
+    transform: scaleY(1) translateX(0);
+  }
+}
+
+.animate-wave-slow {
+  animation: waveDriftSlow 16s ease-in-out infinite;
+}
+
+/* Linha de Checklist com Marcador Técnico */
+.tech-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--color-steel-700);
+  font-weight: 500;
+}
+
+.tech-check-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-brand-sky);
+  color: var(--color-brand-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  margin-top: 0.15rem;
+}
+
+/* Efeito Testimonial / Prova Social */
+.quote-mark {
+  font-family: Georgia, serif;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--color-steel-300);
+  user-select: none;
+}
+
+/* Accordion FAQ Sofisticado */
+.faq-item {
+  border: 1px solid var(--color-steel-200);
+  border-radius: 6px;
+  background-color: var(--color-pure-white);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--color-brand-blue);
+}
+
+.faq-button {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-primary-navy);
+}
+
+.faq-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.65;
+  color: var(--color-steel-600);
+}
+
+.faq-item.active {
+  border-color: var(--color-brand-blue);
+  box-shadow: 0 4px 12px rgba(22, 87, 160, 0.06);
+}
+
+.faq-item.active .faq-body {
+  max-height: 300px;
+  padding-bottom: 1.25rem;
+}
+
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+  color: var(--color-brand-blue);
+}
+
+/* Botões Corporativos */
+.btn-primary-blue {
+  background-color: var(--color-brand-blue);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  padding: 0.85rem 1.75rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(22, 87, 160, 0.2);
+}
+
+.btn-primary-blue:hover {
+  background-color: var(--color-brand-blue-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(22, 87, 160, 0.3);
+}
+
+.btn-outline-steel {
+  background-color: transparent;
+  color: var(--color-primary-navy);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  padding: 0.85rem 1.75rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  border: 1px solid var(--color-steel-300);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline-steel:hover {
+  background-color: var(--color-steel-100);
+  border-color: var(--color-primary-navy);
+  color: var(--color-primary-navy);
+}

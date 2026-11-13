@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minasferro | Referência em Ferro, Aço e Materiais de Construção</title>
+  <meta name="description" content="Minasferro: +43 anos de experiência e mais de 20 lojas em Rondônia e Mato Grosso. Referência em ferro, aço, telhas, ferramentas e materiais elétricos.">
+
+  <!-- Favicon com a Logo Oficial -->
+  <link rel="icon" type="image/png" href="logo/Logo_minasferro.png">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B2341',
+              blue: '#1657A0',
+              blueHover: '#0F427D',
+              sky: '#EBF3FC',
+              ice: '#F4F7FB'
+            },
+            steel: {
+              50: '#F8FAFC',
+              100: '#F1F5F9',
+              200: '#E2E8F0',
+              300: '#CBD5E1',
+              400: '#94A3B8',
+              500: '#64748B',
+              600: '#475569',
+              700: '#334155',
+              800: '#1E293B',
+              900: '#0F172A'
+            }
+          },
+          fontFamily: {
+            heading: ['Lexend', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Folha de Estilos Personalizada com o Design System Enterprise -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-steel-800 font-sans antialiased selection:bg-brand-blue selection:text-white">
+
+  <!-- ========================================================
+       1. TOPBAR INSTITUCIONAL & PRESENÇA INTERESTADUAL
+  ======================================================== -->
+  <div class="bg-brand-navy text-white text-xs sm:text-[13px] py-3 border-b border-brand-blue/30 font-medium">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2.5">
+      <!-- Endereço da Matriz em Vilhena -->
+      <div class="flex items-center space-x-2 text-white">
+        <span class="text-steel-200"><i class="fa-solid fa-location-dot text-blue-400 mr-1.5"></i> Matriz: Av. Celso Mazutti, 5179 - Vilhena - RO</span>
+      </div>
+
+      <!-- Horários e Telefones Rápidos -->
+      <div class="flex items-center space-x-5 text-steel-200">
+        <div class="hidden lg:flex items-center">
+          <i class="fa-regular fa-clock text-blue-400 mr-1.5"></i>
+          <span>Seg a Sex: 07h30 às 18h | Sáb: 07h30 às 12h</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <a href="tel:6933223312" class="hover:text-blue-300 transition-colors font-bold text-white flex items-center">
+            <i class="fa-solid fa-phone text-blue-400 mr-1.5"></i> (69) 3322-3312
+          </a>
+          <span class="text-steel-400">/</span>
+          <a href="tel:6933223121" class="hover:text-blue-300 transition-colors hidden sm:inline text-steel-200">
+            3322-3121
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       2. CABEÇALHO PRINCIPAL COM LOGOMARCA OFICIAL
+  ======================================================== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-steel-200 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        
+        <!-- Logo Oficial Minasferro -->
+        <a href="#" class="flex items-center space-x-3.5 group shrink-0">
+          <img src="logo/Logo_minasferro.png" 
+               alt="Minasferro Comércio de Ferro e Aço" 
+               class="w-12 h-12 rounded-full border border-steel-200 shadow-sm object-contain p-0.5 group-hover:border-brand-blue transition-colors">
+          <div class="flex flex-col">
+            <span class="font-heading font-extrabold text-2xl tracking-tight text-brand-blue leading-none">
+              MINASFERRO
+            </span>
+            <span class="text-[10px] uppercase font-bold tracking-widest text-steel-500 mt-1">
+              Comércio de ferro e aço
+            </span>
+          </div>
+        </a>
+
+        <!-- Links de Navegação Desktop -->
+        <nav class="hidden lg:flex items-center space-x-4 xl:space-x-6 text-sm font-semibold text-steel-700">
+          <a href="#" class="text-brand-blue font-bold">Início</a>
+          <a href="#solucoes" class="hover:text-brand-blue transition-colors">Soluções</a>
+          <a href="#historia" class="hover:text-brand-blue transition-colors">História</a>
+          <a href="#catalogo" class="hover:text-brand-blue transition-colors">Catálogo</a>
+          <a href="#qualidade" class="hover:text-brand-blue transition-colors">Qualidade</a>
+          <a href="#contato" class="hover:text-brand-blue transition-colors">Localização</a>
+          <a href="#faq" class="hover:text-brand-blue transition-colors">FAQ</a>
+        </nav>
+
+        <!-- CTA Principal: Solicitar Orçamento (2 palavras) -->
+        <div class="hidden sm:flex items-center shrink-0">
+          <a href="https://wa.me/556933223312?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Minasferro." 
+             target="_blank" 
+             class="btn-primary-blue text-xs uppercase tracking-wider py-2.5 px-5">
+            <i class="fa-brands fa-whatsapp text-base mr-1"></i>
+            Solicitar Orçamento
+          </a>
+        </div>
+
+        <!-- Botão Menu Mobile -->
+        <div class="flex lg:hidden">
+          <button id="mobile-menu-btn" class="text-steel-700 hover:text-brand-navy p-2 focus:outline-none" aria-label="Abrir Menu">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-steel-200 bg-steel-50 px-4 pt-4 pb-6 space-y-3 font-semibold text-sm">
+      <a href="#" class="block py-2 text-brand-blue">Início</a>
+      <a href="#solucoes" class="block py-2 text-steel-800 hover:text-brand-blue">Soluções</a>
+      <a href="#historia" class="block py-2 text-steel-800 hover:text-brand-blue">História</a>
+      <a href="#catalogo" class="block py-2 text-steel-800 hover:text-brand-blue">Catálogo</a>
+      <a href="#qualidade" class="block py-2 text-steel-800 hover:text-brand-blue">Qualidade</a>
+      <a href="#contato" class="block py-2 text-steel-800 hover:text-brand-blue">Localização</a>
+      <a href="#faq" class="block py-2 text-steel-800 hover:text-brand-blue">FAQ</a>
+      <div class="pt-2">
+        <a href="https://wa.me/556933223312" target="_blank" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-3">
+          <i class="fa-brands fa-whatsapp text-base mr-1"></i> Solicitar Orçamento
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       3. HERO SECTION (FOTO DE FUNDO DE GALPÃO COM DETALHES DE FERROS)
+  ======================================================== -->
+  <section class="relative min-h-[calc(100vh-120px)] flex items-center justify-center py-20 lg:py-28 overflow-hidden bg-brand-navy">
+    
+    <!-- Imagem de Fundo em Alta Resolução (Galpão com Detalhes dos Ferros) -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/hero_galpao_ferros.jpg" 
+           alt="Galpão Industrial com Estoque de Ferro, Aço e Tubos Minasferro" 
+           class="w-full h-full object-cover object-center">
+      <!-- Overlay com Gradiente para Máximo Contraste Editorial e Profundidade -->
+      <div class="absolute inset-0 bg-brand-navy/75 bg-gradient-to-t from-brand-navy via-brand-navy/60 to-brand-navy/75"></div>
+    </div>
+
+    <!-- Conteúdo Centralizado do Hero -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center relative z-10 space-y-6">
+
+      <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[3.5rem] text-white leading-[1.14] tracking-tight max-w-4xl mx-auto drop-shadow-lg">
+        Referência em <span class="text-blue-400">Ferro e Aço</span> de alta qualidade.
+      </h1>
+
+      <p class="text-base sm:text-xl text-steel-200 leading-relaxed max-w-2xl mx-auto font-normal drop-shadow">
+        Do alicerce ao acabamento, temos tudo o que você precisa em aço, ferro, telhas, ferramentas e materiais de construção.
+      </p>
+
+      <!-- CTAs Centralizados -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/556933223312?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20materiais%20de%20ferro%20e%20aço." 
+           target="_blank" 
+           class="btn-primary-blue text-sm uppercase tracking-wider py-4 px-8 shadow-xl hover:shadow-2xl transition-all inline-flex items-center">
+          <i class="fa-brands fa-whatsapp text-lg mr-2 text-green-300"></i>
+          Solicitar Orçamento
+        </a>
+        <a href="#solucoes" 
+           class="inline-flex items-center justify-center py-4 px-7 rounded font-heading font-bold text-xs uppercase tracking-wider text-white bg-white/10 hover:bg-white/20 border border-white/25 backdrop-blur-sm transition-all shadow-md">
+          Nossas Soluções
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FAIXA DE NÚMEROS & CREDIBILIDADE DA REDE (BLOCO SLIM COM ONDAS E ANIMAÇÃO)
+  ======================================================== -->
+  <section id="faixa-metricas" class="bg-brand-navy text-white py-6 sm:py-7 border-b border-brand-blue/30 relative overflow-hidden shadow-md">
+    
+    <!-- Efeito de Onda Fluida e Orgânica no Fundo -->
+    <div class="wave-mesh-bg animate-wave-slow">
+      <svg class="absolute bottom-0 left-0 w-full h-full" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,32 C280,85 460,15 720,52 C980,88 1160,24 1440,38 L1440,120 L0,120 Z" fill="url(#wave-gradient-1)" opacity="0.65"></path>
+        <path d="M0,58 C320,12 560,78 840,42 C1120,8 1280,65 1440,48 L1440,120 L0,120 Z" fill="url(#wave-gradient-2)" opacity="0.45"></path>
+        <defs>
+          <linearGradient id="wave-gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#1657A0" />
+            <stop offset="50%" stop-color="#38BDF8" />
+            <stop offset="100%" stop-color="#1657A0" />
+          </linearGradient>
+          <linearGradient id="wave-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0F427D" />
+            <stop offset="50%" stop-color="#60A5FA" />
+            <stop offset="100%" stop-color="#0F427D" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- Conteúdo em Linha Única Horizontal sem Emojis -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-white/10 items-center">
+        
+        <!-- Item 1: +43 Anos na Mesma Linha -->
+        <div class="flex items-center space-x-3 pt-3 sm:pt-0 sm:px-4 first:pl-0 justify-center sm:justify-start">
+          <span class="font-heading font-black text-2xl lg:text-3xl text-white tracking-tight shrink-0">
+            +<span class="stat-counter" data-target="43">43</span> Anos
+          </span>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-300 border-l border-white/20 pl-3 leading-tight">
+            Tradição & Confiança
+          </span>
+        </div>
+
+        <!-- Item 2: +20 Lojas na Mesma Linha -->
+        <div class="flex items-center space-x-3 pt-3 sm:pt-0 sm:px-4 justify-center sm:justify-start">
+          <span class="font-heading font-black text-2xl lg:text-3xl text-white tracking-tight shrink-0">
+            +<span class="stat-counter" data-target="20">20</span> Lojas
+          </span>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-300 border-l border-white/20 pl-3 leading-tight">
+            Rondônia & Mato Grosso
+          </span>
+        </div>
+
+        <!-- Item 3: NBR 7480 na Mesma Linha -->
+        <div class="flex items-center space-x-3 pt-3 sm:pt-0 sm:px-4 justify-center sm:justify-start">
+          <span class="font-heading font-black text-2xl lg:text-3xl text-white tracking-tight shrink-0">
+            NBR 7480
+          </span>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-300 border-l border-white/20 pl-3 leading-tight">
+            Aço 100% Certificado
+          </span>
+        </div>
+
+        <!-- Item 4: Pronta Entrega na Mesma Linha -->
+        <div class="flex items-center space-x-3 pt-3 sm:pt-0 sm:px-4 justify-center sm:justify-start">
+          <span class="font-heading font-black text-2xl lg:text-3xl text-white tracking-tight shrink-0">
+            Pronta Entrega
+          </span>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-300 border-l border-white/20 pl-3 leading-tight">
+            Estoque Contínuo
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       4. SOLUÇÕES ESPECIALIZADAS EM CONSTRUÇÕES (CARROSSEL INTERATIVO)
+  ======================================================== -->
+  <section id="solucoes" class="py-20 lg:py-24 bg-white border-b border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho com Título, Subtítulo e Setas de Navegação -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="max-w-2xl space-y-3">
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-navy tracking-tight">
+            Soluções Especializadas em Construções
+          </h2>
+          <p class="text-base text-steel-600 leading-relaxed">
+            Oferecemos uma ampla gama de produtos para construção para residências, empresas, indústrias e projetos do agronegócio.
+          </p>
+        </div>
+
+        <!-- Controles de Navegação (Setas Anterior / Próximo) -->
+        <div class="flex items-center space-x-3 shrink-0">
+          <button id="solutions-carousel-prev" 
+                  class="w-12 h-12 rounded-full border border-steel-200 bg-white text-steel-700 hover:text-white hover:bg-brand-blue hover:border-brand-blue shadow-sm hover:shadow transition-all flex items-center justify-center group" 
+                  aria-label="Solução Anterior">
+            <i class="fa-solid fa-chevron-left text-sm group-hover:-translate-x-0.5 transition-transform"></i>
+          </button>
+          <button id="solutions-carousel-next" 
+                  class="w-12 h-12 rounded-full border border-steel-200 bg-white text-steel-700 hover:text-white hover:bg-brand-blue hover:border-brand-blue shadow-sm hover:shadow transition-all flex items-center justify-center group" 
+                  aria-label="Próxima Solução">
+            <i class="fa-solid fa-chevron-right text-sm group-hover:translate-x-0.5 transition-transform"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Container do Carrossel de Soluções -->
+      <div class="relative">
+        <div id="solutions-carousel-track" class="carousel-track">
+          
+          <!-- Solução 1: Ferro e Aço -->
+          <div class="carousel-item">
+            <div class="solution-card p-8 h-full flex flex-col justify-between">
+              <div>
+                <div class="w-14 h-14 rounded bg-steel-100 flex items-center justify-center text-brand-blue text-2xl mb-6 border border-steel-200">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-navy mb-3">
+                  Ferro e Aço
+                </h3>
+                <p class="text-sm text-steel-600 leading-relaxed mb-6">
+                  Oferecemos materiais com resistência, durabilidade e qualidade garantida: vergalhões CA-50 e CA-60, telas nervuradas para concreto, treliças e estribos prontos.
+                </p>
+              </div>
+              <button onclick="cotarItem('Ferro e Aço Estrutural')" class="text-left font-heading font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition-colors inline-flex items-center">
+                Cotar Aço <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Solução 2: Coberturas & Telhas -->
+          <div class="carousel-item">
+            <div class="solution-card p-8 h-full flex flex-col justify-between">
+              <div>
+                <div class="w-14 h-14 rounded bg-steel-100 flex items-center justify-center text-brand-blue text-2xl mb-6 border border-steel-200">
+                  <i class="fa-solid fa-warehouse"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-navy mb-3">
+                  Coberturas & Telhas
+                </h3>
+                <p class="text-sm text-steel-600 leading-relaxed mb-6">
+                  Contamos com telhas galvanizadas trapezoidais (TP-40 / TP-25), telhas onduladas, vigas, terças e estruturas metálicas cortadas sob medida com alta durabilidade.
+                </p>
+              </div>
+              <button onclick="cotarItem('Telhas e Coberturas Metálicas')" class="text-left font-heading font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition-colors inline-flex items-center">
+                Cotar Coberturas <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Solução 3: Ferramentas -->
+          <div class="carousel-item">
+            <div class="solution-card p-8 h-full flex flex-col justify-between">
+              <div>
+                <div class="w-14 h-14 rounded bg-steel-100 flex items-center justify-center text-brand-blue text-2xl mb-6 border border-steel-200">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-navy mb-3">
+                  Ferramentas
+                </h3>
+                <p class="text-sm text-steel-600 leading-relaxed mb-6">
+                  Itens indispensáveis para o dia a dia da construção e manutenção: ferramentas manuais e elétricas profissionais, discos de corte, solda e equipamentos para canteiro.
+                </p>
+              </div>
+              <button onclick="cotarItem('Ferramentas Profissionais')" class="text-left font-heading font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition-colors inline-flex items-center">
+                Cotar Ferramentas <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Solução 4: Materiais Elétricos -->
+          <div class="carousel-item">
+            <div class="solution-card p-8 h-full flex flex-col justify-between">
+              <div>
+                <div class="w-14 h-14 rounded bg-steel-100 flex items-center justify-center text-brand-blue text-2xl mb-6 border border-steel-200">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-navy mb-3">
+                  Materiais Elétricos
+                </h3>
+                <p class="text-sm text-steel-600 leading-relaxed mb-6">
+                  Linha de alta qualidade: condutores elétricos, fios de cobre, eletrodutos, disjuntores e quadros de distribuição para instalações residenciais, comerciais e industriais.
+                </p>
+              </div>
+              <button onclick="cotarItem('Materiais Elétricos')" class="text-left font-heading font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition-colors inline-flex items-center">
+                Cotar Elétricos <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Solução 5: Agronegócio & Pecuária -->
+          <div class="carousel-item">
+            <div class="solution-card p-8 h-full flex flex-col justify-between">
+              <div>
+                <div class="w-14 h-14 rounded bg-steel-100 flex items-center justify-center text-brand-blue text-2xl mb-6 border border-steel-200">
+                  <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-navy mb-3">
+                  Agronegócio & Pecuária
+                </h3>
+                <p class="text-sm text-steel-600 leading-relaxed mb-6">
+                  Arames farpados de alta carga de ruptura e arames lisos ovalados de alta tensão (17x15) com camada pesada de zinco para cercamento rural resistente no campo.
+                </p>
+              </div>
+              <button onclick="cotarItem('Arames para Pecuária e Campo')" class="text-left font-heading font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition-colors inline-flex items-center">
+                Cotar Agropecuária <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Solução 6: Chapas & Metalurgia -->
+          <div class="carousel-item">
+            <div class="solution-card p-8 h-full flex flex-col justify-between">
+              <div>
+                <div class="w-14 h-14 rounded bg-steel-100 flex items-center justify-center text-brand-blue text-2xl mb-6 border border-steel-200">
+                  <i class="fa-solid fa-sheet-plastic"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-navy mb-3">
+                  Chapas & Tubos Industriais
+                </h3>
+                <p class="text-sm text-steel-600 leading-relaxed mb-6">
+                  Chapas de alumínio lisas e chapas xadrez antiderrapantes para caçambas, pisos e escadas, além de tubos redondos, quadrados, retangulares e perfis U para serralheria.
+                </p>
+              </div>
+              <button onclick="cotarItem('Chapas e Tubos Industriais')" class="text-left font-heading font-bold text-xs uppercase tracking-wider text-brand-blue hover:text-brand-navy transition-colors inline-flex items-center">
+                Cotar Chapas <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Indicadores de Slide (Dots de Paginação) -->
+        <div class="flex justify-center items-center space-x-2 mt-8" id="solutions-carousel-dots">
+          <!-- Gerados dinamicamente via JavaScript -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       5. NOSSA HISTÓRIA (DE FORMA BREVE & INSTITUCIONAL)
+  ======================================================== -->
+  <section id="historia" class="py-20 lg:py-24 bg-steel-50 border-b border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Fotografia da História e Estrutura Pioneira -->
+        <div class="lg:col-span-5 order-2 lg:order-1">
+          <div class="relative rounded-xl overflow-hidden shadow-xl border border-steel-200 group">
+            <img src="images/historia_minasferro.jpg" 
+                 alt="Pátio e Centro Logístico Minasferro em Vilhena" 
+                 class="w-full h-80 sm:h-[440px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-transparent to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-lg border border-steel-200 shadow-md flex items-center space-x-3 pointer-events-auto">
+              <div class="w-10 h-10 rounded bg-brand-sky flex items-center justify-center text-brand-blue shrink-0">
+                <i class="fa-solid fa-clock-rotate-left text-lg"></i>
+              </div>
+              <div class="text-xs">
+                <p class="font-heading font-bold text-brand-navy">+43 Anos de Pioneirismo</p>
+                <p class="text-steel-600">Fundada em Vilhena • Presença em RO e MT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo Editorial Breve da História -->
+        <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+
+          <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-brand-navy tracking-tight leading-snug">
+            Tradição e Solidez que Atravessam Décadas
+          </h2>
+
+          <p class="text-base text-steel-600 leading-relaxed">
+            Fundada em <strong>Vilhena - Rondônia</strong>, a <strong>Minasferro</strong> nasceu do espírito pioneiro de impulsionar o desenvolvimento regional através do fornecimento de ferro e aço com procedência garantida. O que iniciou como uma operação focada no atendimento a obras locais evoluiu para uma das redes siderúrgicas mais sólidas da região Norte e Centro-Oeste, somando mais de 20 lojas estratégicas em Rondônia e Mato Grosso.
+          </p>
+
+          <p class="text-sm text-steel-600 leading-relaxed">
+            Ao longo de mais de 43 anos de história, consolidamos parcerias diretas com as maiores usinas do país, abastecendo com agilidade desde pequenas reformas até grandes empreendimentos imobiliários, indústrias e o forte agronegócio regional.
+          </p>
+
+          <!-- Destaques Rápidos da História -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+            <div class="bg-white p-4 rounded-lg border border-steel-200 shadow-sm">
+              <span class="font-heading font-black text-xl text-brand-blue block">1980</span>
+              <span class="text-xs text-steel-600 font-medium mt-1 block">Origem e matriz fundada em Vilhena - RO</span>
+            </div>
+            <div class="bg-white p-4 rounded-lg border border-steel-200 shadow-sm">
+              <span class="font-heading font-black text-xl text-brand-blue block">+20 Lojas</span>
+              <span class="text-xs text-steel-600 font-medium mt-1 block">Capilaridade comercial em RO e MT</span>
+            </div>
+            <div class="bg-white p-4 rounded-lg border border-steel-200 shadow-sm">
+              <span class="font-heading font-black text-xl text-brand-blue block">Pronta Entrega</span>
+              <span class="text-xs text-steel-600 font-medium mt-1 block">Poder logístico para grandes volumes</span>
+            </div>
+          </div>
+
+          <!-- Botão Saber Mais (2 palavras) -->
+          <div class="pt-4">
+            <a href="sobre.html" 
+               class="btn-primary-blue text-xs uppercase tracking-wider py-3.5 px-8 inline-flex items-center shadow-sm hover:shadow transition-all">
+              Saber Mais <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       6. CATÁLOGO TÉCNICO DE PEÇAS & BITOLAS
+  ======================================================== -->
+  <section id="catalogo" class="py-20 lg:py-24 bg-white border-b border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho Limpo sem Badges -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-navy tracking-tight">
+          Catálogo de Peças e Bitolas
+        </h2>
+        <p class="text-base text-steel-600 leading-relaxed">
+          Consulte nosso mix de ferragens armadas, vigas, chapas, perfis e tubos com estoque contínuo e especificações técnicas de usina.
+        </p>
+      </div>
+
+      <!-- Filtros Rápidos (Máximo 2 Palavras por Botão) -->
+      <div class="flex flex-wrap justify-center gap-2 mb-12">
+        <button onclick="filterCatalog('all')" data-cat="all" class="cat-btn active px-4 py-2 rounded text-xs font-heading font-bold uppercase tracking-wider transition-all bg-brand-navy text-white shadow-sm">
+          Todas Peças
+        </button>
+        <button onclick="filterCatalog('ferragens')" data-cat="ferragens" class="cat-btn px-4 py-2 rounded text-xs font-heading font-bold uppercase tracking-wider transition-all bg-white text-steel-700 hover:bg-steel-100 border border-steel-200">
+          Ferragens Concreto
+        </button>
+        <button onclick="filterCatalog('perfis')" data-cat="perfis" class="cat-btn px-4 py-2 rounded text-xs font-heading font-bold uppercase tracking-wider transition-all bg-white text-steel-700 hover:bg-steel-100 border border-steel-200">
+          Perfis Tubos
+        </button>
+        <button onclick="filterCatalog('chapas')" data-cat="chapas" class="cat-btn px-4 py-2 rounded text-xs font-heading font-bold uppercase tracking-wider transition-all bg-white text-steel-700 hover:bg-steel-100 border border-steel-200">
+          Chapas Telhas
+        </button>
+      </div>
+
+      <!-- Grid de Peças -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="catalog-grid">
+        
+        <!-- Peça 1: Vergalhão CA-50 -->
+        <div class="piece-card bg-white rounded-lg border border-steel-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-cat="ferragens">
+          <div>
+            <div class="h-44 w-full overflow-hidden bg-steel-100 relative group">
+              <img src="images/peca_vergalhao_ca50.jpg" alt="Vergalhão CA-50 Nervurado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Norma NBR 7480</div>
+              <h3 class="font-heading font-bold text-base text-brand-navy">Vergalhão CA-50 Nervurado</h3>
+              <p class="text-xs text-steel-600 leading-relaxed">Bitolas de 6.3mm (1/4") até 25.0mm (1"). Alta aderência mecânica ao concreto estrutural.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="cotarItem('Vergalhão CA-50 Nervurado')" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-2.5">
+              Cotar Peça
+            </button>
+          </div>
+        </div>
+
+        <!-- Peça 2: Vergalhão CA-60 -->
+        <div class="piece-card bg-white rounded-lg border border-steel-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-cat="ferragens">
+          <div>
+            <div class="h-44 w-full overflow-hidden bg-steel-100 relative group">
+              <img src="images/peca_vergalhao_ca60.jpg" alt="Vergalhão CA-60 Soldável" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Norma NBR 7480</div>
+              <h3 class="font-heading font-bold text-base text-brand-navy">Vergalhão CA-60 Soldável</h3>
+              <p class="text-xs text-steel-600 leading-relaxed">Bitolas de 4.2mm, 5.0mm e 6.0mm. Alta soldabilidade para estribos, armaduras e telas.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="cotarItem('Vergalhão CA-60')" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-2.5">
+              Cotar Peça
+            </button>
+          </div>
+        </div>
+
+        <!-- Peça 3: Tela Soldada Nervurada -->
+        <div class="piece-card bg-white rounded-lg border border-steel-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-cat="ferragens">
+          <div>
+            <div class="h-44 w-full overflow-hidden bg-steel-100 relative group">
+              <img src="images/peca_tela_soldada.jpg" alt="Tela Soldada Nervurada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Malhas Q & L</div>
+              <h3 class="font-heading font-bold text-base text-brand-navy">Tela Soldada Nervurada</h3>
+              <p class="text-xs text-steel-600 leading-relaxed">Malhas Q-092, Q-138, Q-196, Q-283. Uniformidade mecânica para lajes e pisos industriais.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="cotarItem('Tela Soldada Nervurada')" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-2.5">
+              Cotar Peça
+            </button>
+          </div>
+        </div>
+
+        <!-- Peça 4: Treliças Metálicas -->
+        <div class="piece-card bg-white rounded-lg border border-steel-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-cat="ferragens">
+          <div>
+            <div class="h-44 w-full overflow-hidden bg-steel-100 relative group">
+              <img src="images/peca_trelica.jpg" alt="Treliças para Lajes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Modelos H8 a H20</div>
+              <h3 class="font-heading font-bold text-base text-brand-navy">Treliças para Lajes</h3>
+              <p class="text-xs text-steel-600 leading-relaxed">Modelos H8, H12, H16 e H20 para vigotas e lajes pré-moldadas, reduzindo escoramentos.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="cotarItem('Treliças Metálicas')" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-2.5">
+              Cotar Peça
+            </button>
+          </div>
+        </div>
+
+        <!-- Peça 5: Estribos Padronizados -->
+        <div class="piece-card bg-white rounded-lg border border-steel-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-cat="ferragens">
+          <div>
+            <div class="h-44 w-full overflow-hidden bg-steel-100 relative group">
+              <img src="images/peca_estribos.jpg" alt="Estribos Prontos de Aço" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Aço CA-60</div>
+              <h3 class="font-heading font-bold text-base text-brand-navy">Estribos Prontos</h3>
+              <p class="text-xs text-steel-600 leading-relaxed">Dimensões 7x14, 7x19, 9x14, 9x19 e 14x19cm. Economia de tempo e ferragem padronizada.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="cotarItem('Estribos Prontos')" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-2.5">
+              Cotar Peça
+            </button>
+          </div>
+        </div>
+
+        <!-- Peça 6: Perfil U Simples e Enrijecido -->
+        <div class="piece-card bg-white rounded-lg border border-steel-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-cat="perfis">
+          <div>
+            <div class="h-44 w-full overflow-hidden bg-steel-100 relative group">
+              <img src="images/peca_perfil_u.jpg" alt="Perfis U Estruturais" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Aço ASTM A36</div>
+              <h3 class="font-heading font-bold text-base text-brand-navy">Perfis U Estruturais</h3>
+              <p class="text-xs text-steel-600 leading-relaxed">Perfis simples e enrijecidos de 50x25 a 200x75mm. Espessuras de chapas #14, #13 e #12.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="cotarItem('Perfis U Estruturais')" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-2.5">
+              Cotar Peça
+            </button>
+          </div>
+        </div>
+
+        <!-- Peça 7: Tubos Industriais Metalon -->
+        <div class="piece-card bg-white rounded-lg border border-steel-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-cat="perfis">
+          <div>
+            <div class="h-44 w-full overflow-hidden bg-steel-100 relative group">
+              <img src="images/peca_tubos_metalon.jpg" alt="Tubos Industriais Metalon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Aço Carbono / Galvanizado</div>
+              <h3 class="font-heading font-bold text-base text-brand-navy">Tubos Industriais (Metalon)</h3>
+              <p class="text-xs text-steel-600 leading-relaxed">Medidas de 20x20 até 100x100mm. Paredes de 1.20 a 3.00mm para serralheria e estruturas.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="cotarItem('Tubos Industriais Metalon')" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-2.5">
+              Cotar Peça
+            </button>
+          </div>
+        </div>
+
+        <!-- Peça 8: Chapas Xadrez e Lisas -->
+        <div class="piece-card bg-white rounded-lg border border-steel-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-cat="chapas">
+          <div>
+            <div class="h-44 w-full overflow-hidden bg-steel-100 relative group">
+              <img src="images/peca_chapa_xadrez.jpg" alt="Chapas Xadrez e Lisas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Piso Antiderrapante</div>
+              <h3 class="font-heading font-bold text-base text-brand-navy">Chapas Xadrez & Lisas</h3>
+              <p class="text-xs text-steel-600 leading-relaxed">Espessuras de 2.65mm a 6.35mm (1/8" a 1/4"). Para caçambas, escadas, passarelas e pisos.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="cotarItem('Chapas Xadrez e Lisas')" class="w-full btn-primary-blue text-xs uppercase tracking-wider py-2.5">
+              Cotar Peça
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       7. COMPROMETIDOS COM A QUALIDADE & SATISFAÇÃO DO CLIENTE
+  ======================================================== -->
+  <section id="qualidade" class="py-20 lg:py-24 bg-steel-50 border-b border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Fotografia de Tubos e Aço Estrutural (NBR 7480) -->
+        <div class="lg:col-span-5 order-2 lg:order-1">
+          <div class="relative rounded-xl overflow-hidden shadow-xl border border-steel-200 group">
+            <img src="images/empresa_tubos_aco.jpg" 
+                 alt="Tubos de Aço e Materiais Siderúrgicos Minasferro" 
+                 class="w-full h-80 sm:h-[440px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 via-transparent to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-lg border border-steel-200 shadow-md flex items-center space-x-3 pointer-events-auto">
+              <div class="w-10 h-10 rounded bg-brand-sky flex items-center justify-center text-brand-blue shrink-0">
+                <i class="fa-solid fa-certificate text-lg"></i>
+              </div>
+              <div class="text-xs">
+                <p class="font-heading font-bold text-brand-navy">Qualidade Certificada NBR 7480</p>
+                <p class="text-steel-600">Procedência das melhores usinas siderúrgicas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo Editorial e Checklist "Porque nos escolher?" -->
+        <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+
+          <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-brand-navy tracking-tight leading-snug">
+            Comprometidos com a Qualidade e Satisfação do Cliente
+          </h2>
+
+          <p class="text-base text-steel-600 leading-relaxed">
+            Com mais de 43 anos de experiência no setor de ferro e aço, a <strong>MinasFerro</strong> construiu uma reputação de excelência. Nossa equipe qualificada de profissionais trabalha em conjunto para fornecer materiais de alta qualidade, atendendo com precisão às necessidades do seu projeto, sempre com compromisso e prazo em orçamento.
+          </p>
+
+          <div class="pt-2">
+            <h3 class="font-heading font-bold text-lg text-brand-navy mb-4">
+              Porque nos escolher?
+            </h3>
+            
+            <div class="space-y-3">
+              <div class="tech-check-item">
+                <div class="tech-check-icon"><i class="fa-solid fa-check"></i></div>
+                <span>Profissionais experientes, consultivos e capacitados no setor siderúrgico</span>
+              </div>
+              <div class="tech-check-item">
+                <div class="tech-check-icon"><i class="fa-solid fa-check"></i></div>
+                <span>Atenção rigorosa aos detalhes e material de alta qualidade e procedência ABNT</span>
+              </div>
+              <div class="tech-check-item">
+                <div class="tech-check-icon"><i class="fa-solid fa-check"></i></div>
+                <span>Preços transparentes, condições diretas de matriz e sem taxas ocultas</span>
+              </div>
+              <div class="tech-check-item">
+                <div class="tech-check-icon"><i class="fa-solid fa-check"></i></div>
+                <span>Compromisso inegociável com a segurança e os padrões técnicos do setor</span>
+              </div>
+              <div class="tech-check-item">
+                <div class="tech-check-icon"><i class="fa-solid fa-check"></i></div>
+                <span>Poder logístico de uma rede com mais de 20 lojas entre Rondônia e Mato Grosso</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="https://wa.me/556933223312?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Minasferro." 
+               target="_blank" 
+               class="btn-primary-blue text-xs uppercase tracking-wider py-3.5 px-7">
+              <i class="fa-brands fa-whatsapp text-base mr-1"></i>
+              Solicitar Orçamento
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       8. MATRIZ EM VILHENA & LOCALIZAÇÃO COM AVALIAÇÃO GOOGLE (ACIMA DA CTA)
+  ======================================================== -->
+  <section id="contato" class="py-20 lg:py-24 bg-white border-b border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-navy tracking-tight">
+          Nossa Matriz em Vilhena
+        </h2>
+        <p class="text-base text-steel-600 leading-relaxed">
+          Localização estratégica com amplo pátio logístico para carga e descarga de aço na marginal da BR-364.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Coluna 1: Informações da Matriz e Avaliação no Google -->
+        <div class="lg:col-span-5 bg-steel-50 rounded-xl border border-steel-200 p-8 shadow-sm flex flex-col justify-between">
+          <div class="space-y-6">
+            
+            <div>
+              <h3 class="font-heading font-extrabold text-2xl text-brand-navy">
+                Minasferro Vilhena
+              </h3>
+              <p class="text-sm text-steel-500 mt-1">
+                Sede Administrativa e Centro de Distribuição Regional
+              </p>
+            </div>
+
+            <!-- Dados de Endereço e Atendimento -->
+            <div class="space-y-3.5 text-sm text-steel-700">
+              <div class="flex items-start">
+                <i class="fa-solid fa-map-location-dot text-brand-blue text-base mt-1 mr-3 shrink-0"></i>
+                <span>Av. Celso Mazutti, 5179 - Jardim Eldorado, Vilhena - RO, CEP 76987-037</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-phone text-brand-blue text-base mr-3 shrink-0"></i>
+                <span>(69) 3322-3312 / 3322-3121 / 3321-3969</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-brands fa-whatsapp text-green-600 text-lg mr-3 shrink-0"></i>
+                <span class="font-semibold text-brand-navy">(69) 93322-3312</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-regular fa-clock text-brand-blue text-base mr-3 shrink-0"></i>
+                <span>Seg a Sex: 07h30 às 18h | Sáb: 07h30 às 12h</span>
+              </div>
+            </div>
+
+            <!-- Card Especial: Avaliações no Google (Focado no Botão Avaliar Empresa) -->
+            <div class="p-5 rounded-lg bg-white border border-steel-200 shadow-sm space-y-3.5">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2.5">
+                  <!-- Símbolo Oficial do Google com as 4 cores em SVG de alta nitidez -->
+                  <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                    <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                    <path fill="#FBBC05" d="M5.28 14.27A7.16 7.16 0 0 1 4.9 12c0-.79.14-1.57.38-2.27V6.58H1.25A11.96 11.96 0 0 0 0 12c0 1.92.45 3.74 1.25 5.42l4.03-3.15Z"/>
+                    <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+                  </svg>
+                  <span class="font-heading font-bold text-sm text-brand-navy">Avaliações no Google</span>
+                </div>
+                <!-- 5 Estrelas Douradas -->
+                <div class="flex text-amber-400 text-sm space-x-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              
+              <p class="text-xs text-steel-600 leading-relaxed">
+                Sua opinião fortalece nossa tradição. Já comprou ou cotou conosco? Avalie a Minasferro no Google!
+              </p>
+
+              <div class="pt-1">
+                <a href="https://www.google.com/search?q=minaA+ferros+vilhena&rlz=1C1ONGR_pt-PTBR1088BR1088&oq=minaA+ferros+vilhena&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTISCAEQLhgNGK8BGMcBGIAEGI4FMgkIAhAAGA0YgAQyCAgDEAAYDRgeMggIBBAAGA0YHjIICAUQABgNGB4yCggGEAAYgAQYogTSAQg2NjgzajBqNKgCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x93b96a34fca6854b:0x32463974b936306,3,,,,," 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-primary-blue text-xs uppercase tracking-wider py-3 px-6 w-full inline-flex items-center justify-center shadow-md hover:shadow-lg transition-all">
+                  <i class="fa-brands fa-google text-white mr-2 text-sm"></i>
+                  Avaliar Empresa
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Coluna 2: Mapa Interativo do Google Maps (Clique Direto no Mapa para Rotas) -->
+        <div class="lg:col-span-7 h-full min-h-[380px] lg:min-h-[460px] rounded-xl border border-steel-200 overflow-hidden shadow-sm bg-steel-100 relative">
+          <iframe 
+            src="https://maps.google.com/maps?q=Av.+Celso+Mazutti,+5179+-+Jardim+Eldorado,+Vilhena+-+RO&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            class="w-full h-full min-h-[380px] lg:min-h-[460px] border-0" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização da Matriz Minasferro em Vilhena - Rondônia">
+          </iframe>
+          <!-- Overlay de Acesso de Cargas Pesadas -->
+          <div class="absolute bottom-4 left-4 right-4 sm:right-auto bg-white/95 backdrop-blur-sm p-3.5 rounded-lg border border-steel-200 shadow-md flex items-center space-x-3 pointer-events-auto">
+            <div class="w-10 h-10 rounded bg-brand-sky flex items-center justify-center text-brand-blue shrink-0">
+              <i class="fa-solid fa-truck-moving text-lg"></i>
+            </div>
+            <div class="text-xs">
+              <p class="font-heading font-bold text-brand-navy">Fácil Acesso para Carretas</p>
+              <p class="text-steel-500">Marginal BR-364 • Amplo Pátio de Carregamento</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       9. BANNER CTA (CHAMADA DIRETA DE CONVERSÃO - ACIMA DA FAQ)
+  ======================================================== -->
+  <section class="py-16 sm:py-20 bg-brand-navy text-white relative overflow-hidden border-b border-brand-blue/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="max-w-3xl mx-auto space-y-5">
+        
+        <h2 class="font-heading font-extrabold text-2xl sm:text-4xl lg:text-[2.6rem] text-white tracking-tight leading-tight">
+          Sua Obra Não Pode Parar: Garanta Aço Certificado com Preço de Matriz
+        </h2>
+
+        <p class="text-steel-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+          Envie sua lista de ferragens, projeto estrutural ou relação de materiais. Nossa equipe técnica calcula as quantidades exatas e retorna rapidamente com as melhores condições comerciais.
+        </p>
+
+        <!-- Somente 1 Botão Centralizado -->
+        <div class="pt-4 flex justify-center items-center">
+          <a href="https://wa.me/556933223312?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20materiais%20na%20Minasferro." 
+             target="_blank" 
+             class="btn-primary-blue text-sm uppercase tracking-wider py-4 px-10 shadow-xl hover:shadow-2xl transition-all inline-flex items-center">
+            <i class="fa-brands fa-whatsapp text-xl mr-2 text-green-300"></i>
+            Solicitar Orçamento
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       9. FAQ - PERGUNTAS FREQUENTES (8 PERGUNTAS TÉCNICAS)
+  ======================================================== -->
+  <section id="faq" class="py-20 lg:py-24 bg-white border-b border-steel-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-3">
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-navy tracking-tight">
+          Perguntas Frequentes sobre Nossos Materiais
+        </h2>
+        <p class="text-base text-steel-600 leading-relaxed">
+          Esclareça suas dúvidas sobre atendimento interestadual, conformidade com a ABNT, envio de projetos e prazos de entrega.
+        </p>
+      </div>
+
+      <!-- Container do FAQ Accordion (8 Itens) -->
+      <div class="space-y-3" id="faq-container">
+        
+        <!-- Item 1 -->
+        <div class="faq-item">
+          <button class="faq-button">
+            <span>1. Onde estão localizadas as lojas da Minasferro e qual região é atendida?</span>
+            <i class="faq-chevron fa-solid fa-chevron-down text-xs text-steel-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-body">
+            A Minasferro possui uma rede sólida com mais de 20 lojas distribuídas estrategicamente em 2 estados: Rondônia e Mato Grosso. Nossa matriz administrativa e logística está sediada em Vilhena - RO, e atendemos com rapidez obras urbanas, indústrias e propriedades rurais em toda a região.
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="faq-item">
+          <button class="faq-button">
+            <span>2. Os produtos de ferro e aço comercializados seguem as normas técnicas da ABNT?</span>
+            <i class="faq-chevron fa-solid fa-chevron-down text-xs text-steel-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-body">
+            Sim. Todo o nosso aço para construção civil (vergalhões CA-50, CA-60 e telas soldadas nervuradas) possui procedência de usinas siderúrgicas certificadas, atendendo rigorosamente à norma NBR 7480, garantindo segurança estrutural inegociável para seu projeto.
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="faq-item">
+          <button class="faq-button">
+            <span>3. Como faço para enviar minha lista de corte ou projeto estrutural para orçamento?</span>
+            <i class="faq-chevron fa-solid fa-chevron-down text-xs text-steel-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-body">
+            Você pode enviar sua lista de materiais, planilha ou projeto em PDF diretamente pelo nosso botão de WhatsApp ou entregá-la no balcão de uma de nossas unidades. Nossa equipe técnica calcula as quantidades exatas de barras, telas e peças, retornando com o orçamento detalhado.
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="faq-item">
+          <button class="faq-button">
+            <span>4. A Minasferro vende apenas ferro e aço ou oferece outros materiais para construção?</span>
+            <i class="faq-chevron fa-solid fa-chevron-down text-xs text-steel-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-body">
+            Além de sermos especialistas em ferro e aço, oferecemos um mix completo que inclui materiais de construção, telhas galvanizadas e galvalume, arames para pecuária, chapas metálicas lisas e xadrez, ferramentas manuais e elétricas, e uma linha completa de materiais elétricos.
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="faq-item">
+          <button class="faq-button">
+            <span>5. Vocês atendem tanto no varejo para pequenas reformas quanto no atacado para grandes construtoras?</span>
+            <i class="faq-chevron fa-solid fa-chevron-down text-xs text-steel-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-body">
+            Sim! Atendemos desde o consumidor final que está realizando uma pequena reforma residencial até grandes construtoras, indústrias e pecuaristas, oferecendo condições comerciais diferenciadas e escalonadas graças ao poder de compra e estoque da nossa rede.
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="faq-item">
+          <button class="faq-button">
+            <span>6. As telhas trapezoidais e onduladas podem ser cortadas sob medida para minha cobertura?</span>
+            <i class="faq-chevron fa-solid fa-chevron-down text-xs text-steel-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-body">
+            Sim, fornecemos telhas trapezoidais (TP-40 e TP-25) e onduladas cortadas no comprimento ideal do seu projeto, reduzindo emendas desnecessárias, desperdício de material e tempo de montagem na obra.
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="faq-item">
+          <button class="faq-button">
+            <span>7. Quais são as opções e condições de pagamento disponíveis?</span>
+            <i class="faq-chevron fa-solid fa-chevron-down text-xs text-steel-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-body">
+            Aceitamos pagamento via PIX, cartões de débito e crédito com opções de parcelamento, além de faturamento para pessoas jurídicas e produtores rurais (mediante análise cadastral prévia).
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="faq-item">
+          <button class="faq-button">
+            <span>8. Qual é o horário de funcionamento da matriz em Vilhena?</span>
+            <i class="faq-chevron fa-solid fa-chevron-down text-xs text-steel-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-body">
+            Funcionamos de segunda a sexta-feira, das 07h30 às 12h00 e das 13h30 às 18h00. Aos sábados, atendemos das 07h30 às 12h00. Aos domingos estamos fechados.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       11. RODAPÉ INSTITUCIONAL ARQUITETÔNICO (4 COLUNAS)
+  ======================================================== -->
+  <footer class="bg-steel-900 text-steel-400 text-xs pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Grid Principal do Rodapé -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-10 border-b border-steel-800">
+        
+        <!-- Coluna 1: Sobre a Minasferro com a Logo Oficial em Destaque -->
+        <div class="lg:col-span-4 space-y-5">
+          <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 rounded-2xl bg-white p-2 flex items-center justify-center shadow-md border border-steel-700 shrink-0">
+              <img src="logo/Logo_minasferro.png" 
+                   alt="Minasferro Logo Oficial" 
+                   class="w-full h-full object-contain">
+            </div>
+            <div class="flex flex-col">
+              <span class="font-heading font-black text-2xl tracking-tight text-blue-400 leading-tight">
+                MINASFERRO
+              </span>
+              <span class="text-[10px] uppercase font-bold tracking-widest text-steel-400 mt-1">
+                Comércio de ferro e aço
+              </span>
+            </div>
+          </div>
+          <p class="text-steel-400 text-xs leading-relaxed max-w-sm">
+            Há mais de 43 anos atuando como referência no comércio varejista e atacadista de ferro, aço, telhas, ferramentas e materiais de construção. Uma rede sólida com mais de 20 lojas entre Rondônia e Mato Grosso, fortalecendo obras e projetos com qualidade inegociável.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação Direta pelos Blocos do Site -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider">Navegação</h4>
+          <ul class="space-y-2 text-steel-400 font-medium">
+            <li><a href="#" class="hover:text-white transition-colors flex items-center"><i class="fa-solid fa-angle-right text-[10px] text-brand-blue mr-2"></i>Início</a></li>
+            <li><a href="#solucoes" class="hover:text-white transition-colors flex items-center"><i class="fa-solid fa-angle-right text-[10px] text-brand-blue mr-2"></i>Soluções Especializadas</a></li>
+            <li><a href="#historia" class="hover:text-white transition-colors flex items-center"><i class="fa-solid fa-angle-right text-[10px] text-brand-blue mr-2"></i>Nossa História</a></li>
+            <li><a href="#catalogo" class="hover:text-white transition-colors flex items-center"><i class="fa-solid fa-angle-right text-[10px] text-brand-blue mr-2"></i>Catálogo de Peças</a></li>
+            <li><a href="#qualidade" class="hover:text-white transition-colors flex items-center"><i class="fa-solid fa-angle-right text-[10px] text-brand-blue mr-2"></i>Qualidade e Satisfação</a></li>
+            <li><a href="#contato" class="hover:text-white transition-colors flex items-center"><i class="fa-solid fa-angle-right text-[10px] text-brand-blue mr-2"></i>Localização Matriz</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors flex items-center"><i class="fa-solid fa-angle-right text-[10px] text-brand-blue mr-2"></i>Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Horários de Atendimento -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider">Atendimento</h4>
+          <div class="space-y-2 text-steel-400">
+            <div>
+              <span class="text-white block font-semibold">Segunda a Sexta:</span>
+              <span>07:30h às 12:00h<br>13:30h às 18:00h</span>
+            </div>
+            <div>
+              <span class="text-white block font-semibold">Sábado:</span>
+              <span>07:30h às 12:00h</span>
+            </div>
+            <div>
+              <span class="text-white block font-semibold">Domingo:</span>
+              <span>Fechado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 4: Matriz & Contato (Padronizado de Forma Escrita) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider">Matriz & Contato</h4>
+          
+          <ul class="space-y-3 text-steel-400">
+            <li>
+              <a href="https://maps.google.com/?q=Av.+Celso+Mazutti,+5179+-+Jardim+Eldorado,+Vilhena+-+RO" 
+                 target="_blank" 
+                 class="hover:text-white transition-colors flex items-start group">
+                <i class="fa-solid fa-location-dot text-brand-blue mr-2.5 mt-0.5 shrink-0 group-hover:text-blue-400"></i>
+                <span>Av. Celso Mazutti, 5179 - Jardim Eldorado, Vilhena - RO</span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-phone text-brand-blue mr-2.5 shrink-0"></i>
+              <a href="tel:6933223312" class="hover:text-white transition-colors">(69) 3322-3312</a>
+              <span class="mx-1.5 text-steel-600">/</span>
+              <a href="tel:6933223121" class="hover:text-white transition-colors">3322-3121</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-phone text-brand-blue mr-2.5 shrink-0"></i>
+              <a href="tel:6933213969" class="hover:text-white transition-colors">(69) 3321-3969</a>
+            </li>
+            <li>
+              <a href="https://wa.me/556933223312?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Minasferro." 
+                 target="_blank" 
+                 class="hover:text-white transition-colors flex items-center group">
+                <i class="fa-brands fa-whatsapp text-green-400 mr-2.5 shrink-0 text-sm group-hover:text-green-300"></i>
+                <span>WhatsApp: (69) 93322-3312</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/minasferrovilhena/" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="hover:text-white transition-colors flex items-center group">
+                <i class="fa-brands fa-instagram text-pink-400 mr-2.5 shrink-0 text-sm group-hover:text-pink-300"></i>
+                <span>Instagram: @minasferrovilhena</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior do Rodapé -->
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between text-[11px] text-steel-500 gap-4">
+        <div>
+          © 2026 Minasferro Comércio de Ferro e Aço. Todos os direitos reservados.
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-steel-400">Desenvolvido por</span>
+          <a href="https://orionxbrasil.com/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="inline-flex items-center hover:opacity-90 transition-all hover:scale-105" 
+             title="OrionX Brasil">
+            <img src="logo/orionx.png" alt="OrionX Brasil" class="h-5 sm:h-6 w-auto object-contain">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       12. BOTÃO FLUTUANTE DO WHATSAPP
+  ======================================================== -->
+  <a href="https://wa.me/556933223312?text=Olá!%20Gostaria%20de%20obter%20um%20orçamento%20grátis%20com%20a%20Minasferro." 
+     target="_blank" 
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition-all focus:outline-none"
+     title="Conversar no WhatsApp">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- Script Principal Externo -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
